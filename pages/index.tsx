@@ -1,11 +1,13 @@
 import type { NextPage } from 'next'
 import TopBar from '../components/Ui/TopBar'
+import Hero from '../components/Sections/Hero'
 
 const Home: NextPage = () => {
   return (
-    <div className='flex flex-col w-screen h-screen bg-white font-poppins'>
-      <section>
+    <div className='flex flex-col w-screen h-screen bg-white font-darker'>
+      <section className='flex flex-col'>
         <TopBar />
+        <Hero />
       </section>
     </div>
   )
