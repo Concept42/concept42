@@ -10,16 +10,20 @@ const Hero: React.FC = () => {
       {/* <div className='absolute w-full h-full z-0'>
         <Image src={require('../../assets/blob-haikei.svg')} alt='' />
       </div> */}
-      <div className='flex  w-screen h-screen justify-around items-center z-20'>
-        <div className='flex flex-col pl-20  w-full h-full justify-center items-start font-Sora text-black font-semibold'>
-          <h1 className=' text-[80px] leading-[86px] '>
-            Lorem ipsum <br />
-            dolor sit.
-          </h1>
-          <h2 className=' text-[20px] mb-5 font-normal '>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, doloribus.
-          </h2>
-          <OutlinedButton />
+      <div className='flex  w-screen h-screen items-center z-20'>
+        <div className='flex flex-col  w-full h-full justify-center items-center font-Sora text-black font-semibold'>
+          <div className='flex flex-col justify-center'>
+            <h1 className=' text-[80px] leading-[86px] '>
+              Lorem ipsum <br />
+              dolor sit.
+            </h1>
+            <h2 className=' text-[20px] mb-5 font-normal '>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, doloribus.
+            </h2>
+            <div className='flex'>
+              <OutlinedButton />
+            </div>
+          </div>
         </div>
 
         <div className='flex  w-full h-full justify-center'>
