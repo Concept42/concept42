@@ -3,11 +3,12 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        mytheme: {
+        myTheme: {
           primary: '#230fb1',
           secondary: '#f6d860',
-          accent: '#230fb1',
-          neutral: '#3d4451',
+          accent: '#332d7a',
+          neutral: '#F5F5F5',
+          menu: '#0f0c29',
         },
       },
     ],
@@ -23,13 +24,12 @@ module.exports = {
 
     extend: {
       color: {
-        menu: '#FDFDFE',
+        menu: '#0f0c29',
         accent: '#230FB1',
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        lota: ['lota'],
-        darker: ['Darker Grotesque', 'sans-serif'],
+        roboto: ['Roboto'],
+        Sora: ['Sora'],
       },
     },
   },

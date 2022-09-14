@@ -7,9 +7,12 @@ import { motion } from 'framer-motion'
 const TopBar: React.FC = () => {
   return (
     <>
-      <nav className='flex sticky top-0 w-full h-40 items-center justify-around z-50 -mt-40'>
-        <Image className='' src={logo} height='30' width='212' />
-        <ul className='sm:hidden lg:flex gap-10 lg:text-[16px] xl:text-[18px] leading-[33px] text-white  '>
+      <nav className='flex sticky top-0 w-full h-40 justify-around  items-center  z-50 -mt-40 '>
+        <div className='flex w-full h-full justify-center items-center'>
+          <h1 className='flex font-black text-black text-[36px]'>CONCEPT 42</h1>
+        </div>
+
+        <ul className='flex sm:hidden w-full h-full lg:flex gap-10 lg:text-[16px] xl:text-[18px]  text-black justify-center items-center font-Sora font-regular  '>
           <Link href='/'>
             <motion.li whileHover={{ scale: 1.1 }} className='cursor-pointer '>
               Naslovnica
