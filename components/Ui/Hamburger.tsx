@@ -10,7 +10,6 @@ function Hamburger() {
 
   const handleClick = () => {
     dispatch(setHamburgerOpen())
-    console.log(isOpen)
   }
 
   useEffect(() => {

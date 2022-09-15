@@ -11,7 +11,7 @@ function BallBackground(props: Props) {
     <>
       <motion.div
         animate={{ x: props.positionX / 50, y: props.positionY / 50 }}
-        className='absolute w-full h-full -z-10'
+        className='w-full h-full fixed bottom-0 left-0 -z-1'
       >
         <div className='absolute w-[400px] h-[400px] bottom-0 -left-20  bg-neutral rounded-full'></div>
         <div className='absolute w-[135px] h-[135px] top-[25%] left-96  bg-neutral rounded-full'></div>

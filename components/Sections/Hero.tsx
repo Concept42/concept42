@@ -20,11 +20,11 @@ const Hero: React.FC = () => {
 
   return (
     <>
-      <div className='flex w-screen h-screen bg-black '>
-        {/* <BallBackground positionX={position.x} positionY={position.y} /> */}
+      <BallBackground positionX={position.x} positionY={position.y} />
+      <div className='flex flex-col md:flex-row gap-10 w-screen h-screen justify-center items-center z-10 '>
         <div className=''>
-          {/* <div className='flex flex-col gap-10  px-10 md:items-start'>
-            <h1 className='text-[30px] lg:text-[70px] xl:text-[80px] xl:leading-[86px] '>
+          <div className='flex flex-col gap-5 md:gap-10  px-10 md:items-start text-black '>
+            <h1 className='text-[50px] lg:text-[70px] xl:text-[80px] xl:leading-[86px] '>
               Lorem ipsum <br />
               dolor sit.
             </h1>
@@ -34,11 +34,11 @@ const Hero: React.FC = () => {
             <div className='flex'>
               <OutlinedButton />
             </div>
-          </div> */}
+          </div>
         </div>
-        {/* <div className='flex w-[70%] justify-start md:w-full md:h-full md:justify-center'>
+        <div className='flex '>
           <Image src={require('../../assets/Illustration.svg')} alt='' />
-        </div> */}
+        </div>
       </div>
     </>
   )

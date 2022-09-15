@@ -20,7 +20,7 @@ function NavModal() {
           initial={{ opacity: 0, backgroundColor: 'none' }}
           animate={isOpen ? { opacity: 1, backgroundColor: 'black' } : ''}
           transition={{ duration: 0.5, ease: 'easeInOut' }}
-          className='flex fixed w-screen h-screen '
+          className='flex fixed w-screen h-screen z-[11]'
         ></motion.div>
       ) : (
         ''
