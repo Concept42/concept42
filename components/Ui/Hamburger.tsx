@@ -1,28 +1,30 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useAppSelector, useAppDispatch } from '../../store'
+import { setHamburgerOpen, hamburgerOpen } from '../../slices/themeSlice'
 import { motion } from 'framer-motion'
 
 function Hamburger() {
-  const [isOpen, setIsOpen] = useState(true)
+  const hamburgerIsOpen = useAppSelector(hamburgerOpen)
+  const [isOpen, setIsOpen] = useState(false)
+  const dispatch = useAppDispatch()
 
   const handleClick = () => {
-    setIsOpen((isOpen) => !isOpen)
+    dispatch(setHamburgerOpen())
     console.log(isOpen)
   }
+
   useEffect(() => {
-    handleClick()
-  }, [])
+    setIsOpen(hamburgerIsOpen)
+  }, [hamburgerIsOpen])
 
   return (
     <>
-      {isOpen ? (
-        <motion.div
-          initial={{ opacity: 0, backgroundColor: 'none' }}
-          animate={isOpen ? { opacity: 1, backgroundColor: 'black' } : ''}
-          className='flex absolute w-screen h-screen justify-center items-center'
-        ></motion.div>
-      ) : (
-        ''
-      )}
+      <div
+        // initial={{ opacity: 0, backgroundColor: 'none' }}
+        // animate={isOpen ? { opacity: 1, backgroundColor: 'black' } : ''}
+        className='flex absolute w-screen h-screen justify-center items-center'
+      ></div>
+
       <motion.div onClick={handleClick} className='block md:hidden cursor-pointer z-[2]'>
         <motion.div
           initial={{ translateY: 0, rotate: 0, backgroundColor: 'black' }}
