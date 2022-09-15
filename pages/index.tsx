@@ -13,10 +13,9 @@ const Home: NextPage = () => {
         <Cursor />
       </div>
 
-      <div className='flex flex-col w-screen h-screen bg-white font-Sora '>
+      <div className='flex flex-col w-screen h-screen bg-white font-Sora  '>
         <TopBar />
         <NavModal />
-
         <Hero />
       </div>
     </>
