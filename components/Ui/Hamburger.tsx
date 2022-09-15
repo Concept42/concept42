@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 
 function Hamburger() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(true)
 
   const handleClick = () => {
     setIsOpen((isOpen) => !isOpen)
@@ -18,12 +18,12 @@ function Hamburger() {
         <motion.div
           initial={{ opacity: 0, backgroundColor: 'none' }}
           animate={isOpen ? { opacity: 1, backgroundColor: 'black' } : ''}
-          className='flex absolute w-screen h-screen z-[999]'
+          className='flex absolute w-screen h-screen justify-center items-center'
         ></motion.div>
       ) : (
         ''
       )}
-      <motion.div onClick={handleClick} className='md:hidden cursor-pointer z-[99999]'>
+      <motion.div onClick={handleClick} className='block md:hidden cursor-pointer z-[2]'>
         <motion.div
           initial={{ translateY: 0, rotate: 0, backgroundColor: 'black' }}
           animate={isOpen ? { translateY: 12, rotate: 45, backgroundColor: 'white' } : ''}

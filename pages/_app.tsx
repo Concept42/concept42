@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <div>
-      <Intro />
+      {/* <Intro /> */}
       <Component {...pageProps} />
     </div>
   )

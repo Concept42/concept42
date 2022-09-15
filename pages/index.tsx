@@ -8,13 +8,14 @@ import { useState } from 'react'
 
 const Home: NextPage = () => {
   return (
-    <div className='flex flex-col w-screen h-screen bg-white font-Sora cursor-none'>
+    <>
       <Cursor />
-      <section className='flex flex-col'>
+      <div className='flex flex-col w-screen h-screen bg-white font-Sora cursor-none'>
         <TopBar />
-        <Hero />
-      </section>
-    </div>
+
+        {/* <Hero /> */}
+      </div>
+    </>
   )
 }
 
