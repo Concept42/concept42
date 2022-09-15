@@ -1,15 +1,17 @@
-import React from 'react'
-import logo from '../../assets/Logo.png'
-import Image from 'next/image'
+import React, { useState } from 'react'
+import Hamburger from './Hamburger'
+
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 const TopBar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
-      <nav className='flex sticky top-0 w-full h-40 justify-around  items-center  z-50 -mt-40 '>
-        <div className='flex w-full h-full justify-center items-center'>
+      <nav className='flex sticky top-0 w-full h-40 justify-around items-center z-50 -mt-40 '>
+        <div className='flex w-full h-full sm:justify-around justify-between items-center'>
           <h1 className='flex font-black text-black text-[36px]'>CONCEPT 42</h1>
+          <Hamburger />
         </div>
 
         <ul className='flex sm:hidden w-full h-full lg:flex gap-10 lg:text-[16px] xl:text-[18px]  text-black justify-center items-center font-Sora font-regular  '>
