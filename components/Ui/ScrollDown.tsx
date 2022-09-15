@@ -23,8 +23,8 @@ function ScrollDown() {
       </motion.div>
       <motion.div
         className='flex '
-        initial={{ opacity: 0.7 }}
-        animate={{ opacity: [0.7, 1, 0.7] }}
+        initial={{ y: 0, opacity: 0.7 }}
+        animate={{ y: [0, -5, 0], opacity: [0.7, 1, 0.7] }}
         transition={{ repeat: Infinity, duration: 5 }}
       >
         <MdKeyboardArrowDown />
