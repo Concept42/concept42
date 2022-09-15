@@ -20,7 +20,6 @@ const TopBar: React.FC = () => {
         <h1 className={!isOpen ? 'flex font-black text-black text-[36px]' : 'flex font-black text-white text-[36px]'}>
           CONCEPT 42
         </h1>
-
         <div className='flex justify-around items-center'>
           <Hamburger />
           <NavLinks />

@@ -19,12 +19,6 @@ function Hamburger() {
 
   return (
     <>
-      <div
-        // initial={{ opacity: 0, backgroundColor: 'none' }}
-        // animate={isOpen ? { opacity: 1, backgroundColor: 'black' } : ''}
-        className='flex absolute w-screen h-screen justify-center items-center'
-      ></div>
-
       <motion.div onClick={handleClick} className='block md:hidden cursor-pointer z-[2]'>
         <motion.div
           initial={{ translateY: 0, rotate: 0, backgroundColor: 'black' }}

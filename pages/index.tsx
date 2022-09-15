@@ -8,10 +8,15 @@ import NavModal from '../components/Ui/NavModal'
 const Home: NextPage = () => {
   return (
     <>
-      <Cursor />
-      <NavModal />
-      <div className='flex flex-col w-screen h-screen bg-white font-Sora cursor-none'>
+      <div className='hidden md:flex '>
+        {' '}
+        <Cursor />
+      </div>
+
+      <div className='flex flex-col w-screen h-screen bg-white font-Sora '>
         <TopBar />
+        <NavModal />
+
         {/* <Hero /> */}
       </div>
     </>
