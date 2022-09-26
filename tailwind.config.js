@@ -4,11 +4,12 @@ module.exports = {
     themes: [
       {
         myTheme: {
-          primary: '#0071f2',
-          secondary: '#f6d860',
-          accent: '#332d7a',
+          primary: '#0071F2',
+          secondary: '#FF6784',
+          text: '#444655',
+          accent: '#E42253',
+          'base-100': '#A8AABC',
           neutral: '#F5F5F5',
-          menu: '#0f0c29',
         },
       },
     ],
@@ -23,10 +24,7 @@ module.exports = {
     },
 
     extend: {
-      color: {
-        menu: '#0f0c29',
-        accent: '#230FB1',
-      },
+      color: {},
       fontFamily: {
         roboto: ['Roboto'],
         Sora: ['Sora'],

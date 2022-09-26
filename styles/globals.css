@@ -24,7 +24,7 @@
   border: 2px solid #fefefe;
   border-radius: 100%;
   position: fixed;
-  transform: translate(-25%, -75%);
+  transform: translate(-75%, -20%);
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: difference;
@@ -40,7 +40,7 @@
   opacity: 0;
 }
 .cursor-link-hovered {
-  transform: translate(-50%, -50%) scale(2);
+  transform: translate(-20%, -80%) scale(2);
   background-color: white;
   color: black;
 }
