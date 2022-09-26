@@ -18,9 +18,9 @@ const Hero: React.FC = () => {
 
   return (
     <>
-      <div className='flex flex-col md:flex-row gap-10 w-screen h-screen justify-center items-center z-10 '>
+      <div className='flex flex-col md:flex-row gap-10 w-screen h-screen justify-center items-center '>
         <BallBackground positionX={position.x} positionY={position.y} />
-        <div className='flex flex-col justify-center items-center gap-5 md:gap-10  px-10 md:items-start text-black '>
+        <div className='flex flex-col justify-center items-center gap-5 md:gap-10  px-10 md:items-start text-black z-50 '>
           <h1 className='text-[50px] lg:text-[70px] xl:text-[80px] xl:leading-[86px] '>
             Lorem ipsum <br />
             dolor sit.
